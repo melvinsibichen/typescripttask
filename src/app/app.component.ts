@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
 
 }
 
-// var example1
+// var example1***********
 
 // var i
 //   for( i=0;i<2;)
@@ -42,7 +42,9 @@ export class AppComponent implements OnInit {
 
 
 
-// var example2
+
+
+// var example2********
 
   // for(var i=0;i<2;i++){
 
@@ -50,15 +52,70 @@ export class AppComponent implements OnInit {
   // console.log(i)
 
 
-  // let example1
 
+
+
+// var example3********
+var globalVariable: number = 10;
+function exampleFunction() {
+  if (true) {
+    var localVar: string = "local variable!";
+    console.log(globalVariable); 
+    console.log(localVar); 
+  }
+
+  console.log(localVar); 
+}
+exampleFunction();
+console.log(globalVariable);
+
+
+
+
+
+  // let example1***********
 
   // for(let i=0;i<2;i++){
   //   console.log(i)
   // }
+
+
+  // let example2**********
+// let blockScopedVariable: number = 20;
+
+// function exampleFunction() {
+//   if (true) {
+//     let blockVar: string = "block-scoped variable";
+//     console.log(blockScopedVariable); 
+//     console.log(blockVar); 
+//   }  
+// }
+// exampleFunction();
+// console.log(blockScopedVariable); 
   
 
-   // const example1
+
+
+   // const example1**********
   //  for (const i=0; i<2; i++){
   //   console.log(i)
   //  }
+
+
+
+
+
+// const example 2*************
+// const constantValue: string = " constant value";
+
+// function exampleFunction() {
+//   const functionScopedConst: number = 30;
+//   console.log(constantValue); 
+//   console.log(functionScopedConst); 
+// }
+
+// exampleFunction();
+// console.log(constantValue); 
+
+
+
